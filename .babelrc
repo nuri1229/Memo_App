@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", ">= 5% in KR"]
+        },
+        "useBuiltIns": "entry",
+        "corejs": 3,
+        "shippedProposals": true
+      }
+    ]
+  ],
+  "plugins": ["@babel/plugin-transform-react-jsx-source"]
+}
