@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es2015", "es2017", "dom"],
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "strict": true,
+    "strictNullChecks": true,
+    "paths": {
+      "global/*": ["./src/global/*"],
+      "page/*": ["./src/page/*"],
+      "memo/*": ["./src/memo/*"],
+      "label/*": ["./src/label/*"]
+    },
+    "jsx": "react"
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true
+  },
+  "exclude": ["node_modules", "build"],
+  "include": ["src", "declaration.d.ts"]
+}
